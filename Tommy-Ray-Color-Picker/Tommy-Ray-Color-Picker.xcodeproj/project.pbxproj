@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CA42E0919E1A14A00577C41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA42E0819E1A14A00577C41 /* main.m */; };
+		1CA42E0C19E1A14A00577C41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA42E0B19E1A14A00577C41 /* AppDelegate.m */; };
+		1CA42E0F19E1A14A00577C41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA42E0E19E1A14A00577C41 /* ViewController.m */; };
+		1CA42E1219E1A14A00577C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CA42E1019E1A14A00577C41 /* Main.storyboard */; };
+		1CA42E1419E1A14A00577C41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA42E1319E1A14A00577C41 /* Images.xcassets */; };
+		1CA42E1719E1A14A00577C41 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA42E1519E1A14A00577C41 /* LaunchScreen.xib */; };
+		1CA42E2319E1A14A00577C41 /* Tommy_Ray_Color_PickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA42E2219E1A14A00577C41 /* Tommy_Ray_Color_PickerTests.m */; };
+		1CA42E2E19E1A39400577C41 /* AlphaControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA42E2D19E1A39400577C41 /* AlphaControl.m */; };
+		1CA42E3119E1A3CB00577C41 /* BrightnessControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA42E2F19E1A3CB00577C41 /* BrightnessControl.m */; };
+		1CA42E3419E1A3FA00577C41 /* BrightnessDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA42E3319E1A3FA00577C41 /* BrightnessDisplay.m */; };
+		1CA42E3719E1A42100577C41 /* ColorDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA42E3619E1A42100577C41 /* ColorDisplay.m */; };
+		1CA42E3B19E1A44E00577C41 /* ColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA42E3919E1A44E00577C41 /* ColorPicker.m */; };
+		1CA42E3C19E1A44E00577C41 /* ColorPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA42E3A19E1A44E00577C41 /* ColorPicker.xib */; };
+		1CA42E4219E1A48A00577C41 /* apple-colorwheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA42E3D19E1A48A00577C41 /* apple-colorwheel.png */; };
+		1CA42E4319E1A48A00577C41 /* checkeredBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA42E3E19E1A48A00577C41 /* checkeredBackground.png */; };
+		1CA42E4419E1A48A00577C41 /* ColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA42E4119E1A48A00577C41 /* ColorWheel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CA42E1D19E1A14A00577C41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CA42DFB19E1A14A00577C41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CA42E0219E1A14A00577C41;
+			remoteInfo = "Tommy-Ray-Color-Picker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CA42E0319E1A14A00577C41 /* Tommy-Ray-Color-Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tommy-Ray-Color-Picker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA42E0719E1A14A00577C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CA42E0819E1A14A00577C41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CA42E0A19E1A14A00577C41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1CA42E0B19E1A14A00577C41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1CA42E0D19E1A14A00577C41 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1CA42E0E19E1A14A00577C41 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1CA42E1119E1A14A00577C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CA42E1319E1A14A00577C41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1CA42E1619E1A14A00577C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1CA42E1C19E1A14A00577C41 /* Tommy-Ray-Color-PickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tommy-Ray-Color-PickerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA42E2119E1A14A00577C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CA42E2219E1A14A00577C41 /* Tommy_Ray_Color_PickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tommy_Ray_Color_PickerTests.m; sourceTree = "<group>"; };
+		1CA42E2C19E1A39400577C41 /* AlphaControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaControl.h; sourceTree = "<group>"; };
+		1CA42E2D19E1A39400577C41 /* AlphaControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaControl.m; sourceTree = "<group>"; };
+		1CA42E2F19E1A3CB00577C41 /* BrightnessControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrightnessControl.m; sourceTree = "<group>"; };
+		1CA42E3019E1A3CB00577C41 /* BrightnessControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrightnessControl.h; sourceTree = "<group>"; };
+		1CA42E3219E1A3FA00577C41 /* BrightnessDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrightnessDisplay.h; sourceTree = "<group>"; };
+		1CA42E3319E1A3FA00577C41 /* BrightnessDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrightnessDisplay.m; sourceTree = "<group>"; };
+		1CA42E3519E1A42100577C41 /* ColorDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDisplay.h; sourceTree = "<group>"; };
+		1CA42E3619E1A42100577C41 /* ColorDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorDisplay.m; sourceTree = "<group>"; };
+		1CA42E3819E1A44E00577C41 /* ColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPicker.h; sourceTree = "<group>"; };
+		1CA42E3919E1A44E00577C41 /* ColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPicker.m; sourceTree = "<group>"; };
+		1CA42E3A19E1A44E00577C41 /* ColorPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPicker.xib; sourceTree = "<group>"; };
+		1CA42E3D19E1A48A00577C41 /* apple-colorwheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-colorwheel.png"; sourceTree = "<group>"; };
+		1CA42E3E19E1A48A00577C41 /* checkeredBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkeredBackground.png; sourceTree = "<group>"; };
+		1CA42E3F19E1A48A00577C41 /* ColorPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerDelegate.h; sourceTree = "<group>"; };
+		1CA42E4019E1A48A00577C41 /* ColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorWheel.h; sourceTree = "<group>"; };
+		1CA42E4119E1A48A00577C41 /* ColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorWheel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CA42E0019E1A14A00577C41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CA42E1919E1A14A00577C41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CA42DFA19E1A14A00577C41 = {
+			isa = PBXGroup;
+			children = (
+				1CA42E0519E1A14A00577C41 /* Tommy-Ray-Color-Picker */,
+				1CA42E1F19E1A14A00577C41 /* Tommy-Ray-Color-PickerTests */,
+				1CA42E0419E1A14A00577C41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CA42E0419E1A14A00577C41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CA42E0319E1A14A00577C41 /* Tommy-Ray-Color-Picker.app */,
+				1CA42E1C19E1A14A00577C41 /* Tommy-Ray-Color-PickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CA42E0519E1A14A00577C41 /* Tommy-Ray-Color-Picker */ = {
+			isa = PBXGroup;
+			children = (
+				1CA42E4D19E1A73B00577C41 /* TommyRayColorPicker */,
+				1CA42E0A19E1A14A00577C41 /* AppDelegate.h */,
+				1CA42E0B19E1A14A00577C41 /* AppDelegate.m */,
+				1CA42E0D19E1A14A00577C41 /* ViewController.h */,
+				1CA42E0E19E1A14A00577C41 /* ViewController.m */,
+				1CA42E1019E1A14A00577C41 /* Main.storyboard */,
+				1CA42E1319E1A14A00577C41 /* Images.xcassets */,
+				1CA42E1519E1A14A00577C41 /* LaunchScreen.xib */,
+				1CA42E0619E1A14A00577C41 /* Supporting Files */,
+			);
+			path = "Tommy-Ray-Color-Picker";
+			sourceTree = "<group>";
+		};
+		1CA42E0619E1A14A00577C41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CA42E0719E1A14A00577C41 /* Info.plist */,
+				1CA42E0819E1A14A00577C41 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CA42E1F19E1A14A00577C41 /* Tommy-Ray-Color-PickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CA42E2219E1A14A00577C41 /* Tommy_Ray_Color_PickerTests.m */,
+				1CA42E2019E1A14A00577C41 /* Supporting Files */,
+			);
+			path = "Tommy-Ray-Color-PickerTests";
+			sourceTree = "<group>";
+		};
+		1CA42E2019E1A14A00577C41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CA42E2119E1A14A00577C41 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CA42E4719E1A6BA00577C41 /* AlphaModule */ = {
+			isa = PBXGroup;
+			children = (
+				1CA42E2C19E1A39400577C41 /* AlphaControl.h */,
+				1CA42E2D19E1A39400577C41 /* AlphaControl.m */,
+			);
+			name = AlphaModule;
+			sourceTree = "<group>";
+		};
+		1CA42E4819E1A6C400577C41 /* BrightnessModule */ = {
+			isa = PBXGroup;
+			children = (
+				1CA42E2F19E1A3CB00577C41 /* BrightnessControl.m */,
+				1CA42E3019E1A3CB00577C41 /* BrightnessControl.h */,
+				1CA42E3219E1A3FA00577C41 /* BrightnessDisplay.h */,
+				1CA42E3319E1A3FA00577C41 /* BrightnessDisplay.m */,
+			);
+			name = BrightnessModule;
+			sourceTree = "<group>";
+		};
+		1CA42E4919E1A6CE00577C41 /* ColorWheel */ = {
+			isa = PBXGroup;
+			children = (
+				1CA42E3D19E1A48A00577C41 /* apple-colorwheel.png */,
+				1CA42E4019E1A48A00577C41 /* ColorWheel.h */,
+				1CA42E4119E1A48A00577C41 /* ColorWheel.m */,
+			);
+			name = ColorWheel;
+			sourceTree = "<group>";
+		};
+		1CA42E4A19E1A6DC00577C41 /* ColorDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				1CA42E3519E1A42100577C41 /* ColorDisplay.h */,
+				1CA42E3619E1A42100577C41 /* ColorDisplay.m */,
+				1CA42E3E19E1A48A00577C41 /* checkeredBackground.png */,
+			);
+			name = ColorDisplay;
+			sourceTree = "<group>";
+		};
+		1CA42E4C19E1A72900577C41 /* ColorPickerModules */ = {
+			isa = PBXGroup;
+			children = (
+				1CA42E4A19E1A6DC00577C41 /* ColorDisplay */,
+				1CA42E4919E1A6CE00577C41 /* ColorWheel */,
+				1CA42E4819E1A6C400577C41 /* BrightnessModule */,
+				1CA42E4719E1A6BA00577C41 /* AlphaModule */,
+			);
+			name = ColorPickerModules;
+			sourceTree = "<group>";
+		};
+		1CA42E4D19E1A73B00577C41 /* TommyRayColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				1CA42E3F19E1A48A00577C41 /* ColorPickerDelegate.h */,
+				1CA42E3819E1A44E00577C41 /* ColorPicker.h */,
+				1CA42E3919E1A44E00577C41 /* ColorPicker.m */,
+				1CA42E3A19E1A44E00577C41 /* ColorPicker.xib */,
+				1CA42E4C19E1A72900577C41 /* ColorPickerModules */,
+			);
+			name = TommyRayColorPicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CA42E0219E1A14A00577C41 /* Tommy-Ray-Color-Picker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CA42E2619E1A14A00577C41 /* Build configuration list for PBXNativeTarget "Tommy-Ray-Color-Picker" */;
+			buildPhases = (
+				1CA42DFF19E1A14A00577C41 /* Sources */,
+				1CA42E0019E1A14A00577C41 /* Frameworks */,
+				1CA42E0119E1A14A00577C41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tommy-Ray-Color-Picker";
+			productName = "Tommy-Ray-Color-Picker";
+			productReference = 1CA42E0319E1A14A00577C41 /* Tommy-Ray-Color-Picker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CA42E1B19E1A14A00577C41 /* Tommy-Ray-Color-PickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CA42E2919E1A14A00577C41 /* Build configuration list for PBXNativeTarget "Tommy-Ray-Color-PickerTests" */;
+			buildPhases = (
+				1CA42E1819E1A14A00577C41 /* Sources */,
+				1CA42E1919E1A14A00577C41 /* Frameworks */,
+				1CA42E1A19E1A14A00577C41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CA42E1E19E1A14A00577C41 /* PBXTargetDependency */,
+			);
+			name = "Tommy-Ray-Color-PickerTests";
+			productName = "Tommy-Ray-Color-PickerTests";
+			productReference = 1CA42E1C19E1A14A00577C41 /* Tommy-Ray-Color-PickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CA42DFB19E1A14A00577C41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = TommyRayStudios;
+				TargetAttributes = {
+					1CA42E0219E1A14A00577C41 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					1CA42E1B19E1A14A00577C41 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 1CA42E0219E1A14A00577C41;
+					};
+				};
+			};
+			buildConfigurationList = 1CA42DFE19E1A14A00577C41 /* Build configuration list for PBXProject "Tommy-Ray-Color-Picker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CA42DFA19E1A14A00577C41;
+			productRefGroup = 1CA42E0419E1A14A00577C41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CA42E0219E1A14A00577C41 /* Tommy-Ray-Color-Picker */,
+				1CA42E1B19E1A14A00577C41 /* Tommy-Ray-Color-PickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CA42E0119E1A14A00577C41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA42E4219E1A48A00577C41 /* apple-colorwheel.png in Resources */,
+				1CA42E1219E1A14A00577C41 /* Main.storyboard in Resources */,
+				1CA42E3C19E1A44E00577C41 /* ColorPicker.xib in Resources */,
+				1CA42E1719E1A14A00577C41 /* LaunchScreen.xib in Resources */,
+				1CA42E4319E1A48A00577C41 /* checkeredBackground.png in Resources */,
+				1CA42E1419E1A14A00577C41 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CA42E1A19E1A14A00577C41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CA42DFF19E1A14A00577C41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA42E4419E1A48A00577C41 /* ColorWheel.m in Sources */,
+				1CA42E3719E1A42100577C41 /* ColorDisplay.m in Sources */,
+				1CA42E2E19E1A39400577C41 /* AlphaControl.m in Sources */,
+				1CA42E0F19E1A14A00577C41 /* ViewController.m in Sources */,
+				1CA42E0C19E1A14A00577C41 /* AppDelegate.m in Sources */,
+				1CA42E3419E1A3FA00577C41 /* BrightnessDisplay.m in Sources */,
+				1CA42E3B19E1A44E00577C41 /* ColorPicker.m in Sources */,
+				1CA42E3119E1A3CB00577C41 /* BrightnessControl.m in Sources */,
+				1CA42E0919E1A14A00577C41 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CA42E1819E1A14A00577C41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA42E2319E1A14A00577C41 /* Tommy_Ray_Color_PickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CA42E1E19E1A14A00577C41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CA42E0219E1A14A00577C41 /* Tommy-Ray-Color-Picker */;
+			targetProxy = 1CA42E1D19E1A14A00577C41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CA42E1019E1A14A00577C41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CA42E1119E1A14A00577C41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CA42E1519E1A14A00577C41 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CA42E1619E1A14A00577C41 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CA42E2419E1A14A00577C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CA42E2519E1A14A00577C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CA42E2719E1A14A00577C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Tommy-Ray-Color-Picker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1CA42E2819E1A14A00577C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Tommy-Ray-Color-Picker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1CA42E2A19E1A14A00577C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tommy-Ray-Color-PickerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tommy-Ray-Color-Picker.app/Tommy-Ray-Color-Picker";
+			};
+			name = Debug;
+		};
+		1CA42E2B19E1A14A00577C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tommy-Ray-Color-PickerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tommy-Ray-Color-Picker.app/Tommy-Ray-Color-Picker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CA42DFE19E1A14A00577C41 /* Build configuration list for PBXProject "Tommy-Ray-Color-Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CA42E2419E1A14A00577C41 /* Debug */,
+				1CA42E2519E1A14A00577C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CA42E2619E1A14A00577C41 /* Build configuration list for PBXNativeTarget "Tommy-Ray-Color-Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CA42E2719E1A14A00577C41 /* Debug */,
+				1CA42E2819E1A14A00577C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CA42E2919E1A14A00577C41 /* Build configuration list for PBXNativeTarget "Tommy-Ray-Color-PickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CA42E2A19E1A14A00577C41 /* Debug */,
+				1CA42E2B19E1A14A00577C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CA42DFB19E1A14A00577C41 /* Project object */;
+}

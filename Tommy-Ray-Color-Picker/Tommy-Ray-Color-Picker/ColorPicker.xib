@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1rn-un-waT" customClass="ColorPicker">
+            <rect key="frame" x="0.0" y="0.0" width="198" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fj1-w3-tcx">
+                    <rect key="frame" x="0.0" y="0.0" width="198" height="250"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kCA-wu-Fcg">
+                    <rect key="frame" x="30" y="5" width="162" height="29"/>
+                    <segments>
+                        <segment title="Text"/>
+                        <segment title="Background"/>
+                    </segments>
+                    <connections>
+                        <action selector="selectorValueChanged:" destination="1rn-un-waT" eventType="valueChanged" id="GlB-1x-wi7"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l8C-f0-jki" customClass="ColorDisplay">
+                    <rect key="frame" x="4" y="39" width="157" height="22"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkeredBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="WYq-Ww-ayI">
+                            <rect key="frame" x="1" y="1" width="155" height="20"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DuY-lf-FV0">
+                            <rect key="frame" x="1" y="1" width="155" height="20"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="colorDisplay" destination="DuY-lf-FV0" id="drU-3f-wMv"/>
+                        <outlet property="colorWheel" destination="WYq-Ww-ayI" id="auq-Ks-XUV"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bOh-ve-hOb" customClass="BrightnessControl">
+                    <rect key="frame" x="162" y="33" width="29" height="197"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o5n-Z3-Lk1">
+                            <rect key="frame" x="11" y="9" width="18" height="173"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EmV-CJ-e4H">
+                                    <rect key="frame" x="1" y="1" width="16" height="171"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjU-2O-gXM" customClass="BrightnessDisplay">
+                                    <rect key="frame" x="1" y="1" width="16" height="171"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTj-f7-eBK">
+                            <rect key="frame" x="1" y="77" width="30" height="30"/>
+                            <gestureRecognizers/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title=">---">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="colorDisplay" destination="EmV-CJ-e4H" id="j2o-cl-MQo"/>
+                        <outlet property="display" destination="yjU-2O-gXM" id="9vv-sv-idR"/>
+                        <outlet property="selector" destination="MTj-f7-eBK" id="WgZ-4c-fMz"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cxh-kr-u02" customClass="AlphaControl">
+                    <rect key="frame" x="3" y="202" width="184" height="48"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Opacity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvO-8h-rDX">
+                            <rect key="frame" x="139" y="18" width="48" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="W2u-oq-9TS">
+                            <rect key="frame" x="0.0" y="16" width="140" height="34"/>
+                            <connections>
+                                <action selector="valueChanged:" destination="Cxh-kr-u02" eventType="valueChanged" id="pP8-BK-icl"/>
+                            </connections>
+                        </slider>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiY-Ef-SL9">
+                            <rect key="frame" x="149" y="32" width="31" height="17"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="alphaLabel" destination="eiY-Ef-SL9" id="RzR-5M-TFu"/>
+                        <outlet property="alphaSlider" destination="W2u-oq-9TS" id="Qh5-PJ-Zmu"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BgM-T8-0N3" customClass="ColorWheel">
+                    <rect key="frame" x="8" y="66" width="150" height="150"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple-colorwheel.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Ti-aE-QgW">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Aa-QU-xJf">
+                            <rect key="frame" x="75" y="75" width="6" height="6"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8am-j6-Qff">
+                                    <rect key="frame" x="1" y="1" width="4" height="4"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="colorWheel" destination="5Ti-aE-QgW" id="PXN-rO-dZn"/>
+                        <outlet property="selectorContainer" destination="9Aa-QU-xJf" id="QYe-F9-j4K"/>
+                        <outlet property="selectorDisplay" destination="8am-j6-Qff" id="Wni-Qt-KmP"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2N-8m-8dd">
+                    <rect key="frame" x="4" y="8" width="22" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <connections>
+                        <action selector="closeButtonPressed:" destination="1rn-un-waT" eventType="touchUpInside" id="6ow-Ii-EnW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="alphaSlider" destination="Cxh-kr-u02" id="FpU-PY-KxJ"/>
+                <outlet property="backgroundView" destination="fj1-w3-tcx" id="tRp-3k-cbx"/>
+                <outlet property="brightness" destination="bOh-ve-hOb" id="cc0-BZ-xuw"/>
+                <outlet property="closeButton" destination="K2N-8m-8dd" id="Smh-ot-OPF"/>
+                <outlet property="colorDisplay" destination="l8C-f0-jki" id="nfu-fW-R4e"/>
+                <outlet property="textBackgroundPicker" destination="kCA-wu-Fcg" id="DBU-Vu-W5e"/>
+                <outlet property="wheel" destination="BgM-T8-0N3" id="1n6-iK-5Ph"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="apple-colorwheel.png" width="730" height="730"/>
+        <image name="checkeredBackground.png" width="518" height="154"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

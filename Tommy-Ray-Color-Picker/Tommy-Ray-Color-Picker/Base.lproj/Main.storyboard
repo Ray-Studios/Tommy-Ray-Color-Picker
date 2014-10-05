@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sw7-9s-9AB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Fxg-a4-Ky5">
+            <objects>
+                <viewController id="sw7-9s-9AB" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oWa-Ky-qE5"/>
+                        <viewControllerLayoutGuide type="bottom" id="a9r-dD-Z4W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5GO-nJ-cAh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkeredBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="qsT-ll-O6X">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1yY-dA-kt0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKW-bq-TYP">
+                                        <rect key="frame" x="145" y="56" width="311" height="41"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Tommy Ray Color Picker">
+                                                <attributes>
+                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <font key="NSFont" size="27" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wKW-bq-TYP" firstAttribute="top" secondItem="1yY-dA-kt0" secondAttribute="top" constant="56" id="F4S-bQ-fx5"/>
+                                    <constraint firstAttribute="centerX" secondItem="wKW-bq-TYP" secondAttribute="centerX" constant="-0.5" id="j6N-9G-YZs"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS1-wF-5nH">
+                                <rect key="frame" x="233" y="530" width="135" height="30"/>
+                                <state key="normal" title="Reveal Color Picker">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="revealPickerPressed:" destination="sw7-9s-9AB" eventType="touchUpInside" id="JSO-ai-K1S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1yY-dA-kt0" firstAttribute="width" secondItem="5GO-nJ-cAh" secondAttribute="width" id="KW4-Iz-3wu"/>
+                            <constraint firstItem="1yY-dA-kt0" firstAttribute="height" secondItem="5GO-nJ-cAh" secondAttribute="height" id="P1J-Ki-cMa"/>
+                            <constraint firstAttribute="centerX" secondItem="QS1-wF-5nH" secondAttribute="centerX" constant="-0.5" id="RmB-T1-3Xg"/>
+                            <constraint firstItem="a9r-dD-Z4W" firstAttribute="top" secondItem="QS1-wF-5nH" secondAttribute="bottom" constant="40" id="l5u-9f-PF7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="1yY-dA-kt0" id="oWw-TW-MLB"/>
+                        <outlet property="label" destination="wKW-bq-TYP" id="FQL-yq-Y72"/>
+                        <outlet property="revealButton" destination="QS1-wF-5nH" id="qNh-zS-JlL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2P4-8N-aQv" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkeredBackground.png" width="518" height="154"/>
+    </resources>
+</document>

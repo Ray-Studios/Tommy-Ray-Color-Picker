@@ -7,7 +7,6 @@
 //
 
 #import "ColorPicker.h"
-//#import "testDisplay.h"
 #import "ViewController.h"
 
 @interface ViewController () <ColorPickerDelegate>//, testDisplayProtocol>
@@ -28,19 +27,12 @@
     self.picker.center = self.view.center;
     [self.view addSubview:self.picker];
     
-//    testDisplay* display = [[testDisplay alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
-//    [display setDelegate:self];
-//    [self.view addSubview:display];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*-(UIColor*)initalColorForTestDisplay:(testDisplay *)display{
-    return [UIColor redColor];
-}*/
 
 -(void)hideColorPicker{
     [UIView animateWithDuration:.3f animations:^{
